@@ -14,12 +14,14 @@ def num_search(search_num, arr, start, end):
 n = int(input("Enter number of elements of array: "))
 arr=[]
 for i in range(0,n):
-    element_arr = int(input(f"The {i+1}st element in array in sorted manner is: "))
+    element_arr = int(input(f"The {i+1}st element in array is: "))
     arr.append(element_arr)
 
 
 search_num = int(input("Which number do you want to search: "))
 
+arr.sort()
+print(f"The sorted array is {arr}")
   
 print(num_search(search_num, arr, 0, n))
    
